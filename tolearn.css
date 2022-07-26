@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(29, 29, 29);
+  color: rgb(231, 231, 231);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* height: 100vh; */
+}
+
+p,
+span {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: rgb(78, 0, 0);
+  line-height: 1.5rem;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 3px 1.5em;
+  background-color: green;
+}
+
+#inputInches {
+  display: flex;
+  width: 80px;
+  height: 30px;
+  padding-left: 20px;
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 3px;
+  background-color: rgb(255, 200, 127);
+}
+
+#output-CM {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 3px;
+  background-color: rgb(255, 200, 127);
+  flex-grow: 1;
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 350px;
+  border: 1px solid rgba(255, 200, 127, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.converter-title {
+  margin-bottom: 20px;
+  padding: 0 50px;
+  border-bottom: 1px solid red;
+}
+.converter-content {
+  display: flex;
+  overflow: hidden;
+}
+
+.output-size {
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.booklist,
+.media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(27, 27, 27);
+  border: 1px dotted rgb(146, 146, 146);
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 10px;
+  width: 700px;
+}
+
+.title-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 1.5rem;
+}
+
+.title-head span {
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  line-height: 1em;
+  margin: 5px 15px;
+  text-shadow: 0 0 10px rgba(253, 253, 253, 0.5);
+}
+
+.sub-title {
+  margin: 5px;
+  margin-bottom: 20px;
+  align-self: center;
+  font-weight: 600;
+  font-size: large;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.text-area {
+  flex: 2;
+  align-items: center;
+}
+
+.inputId {
+  height: 30px;
+  width: 100%;
+  border-style: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.date-picker {
+  height: 30px;
+  width: 130px;
+  border-style: none;
+  padding: 3px;
+  background-color: #ddd;
+  outline: none;
+}
+
+.addBtn {
+  flex: 0.2;
+  height: 30px;
+  background: rgb(117, 3, 3);
+  color: #fff;
+  margin-left: 10px;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.list-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  line-height: 2.5em;
+}
+
+.list-container button {
+  align-items: flex-end;
+  height: 25px;
+  width: auto;
+  padding: 0 10px;
+  background: rgb(117, 3, 3);
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.list-container button:last-child {
+  background: rgb(255, 255, 255);
+  align-items: flex-end;
+  height: 25px;
+  width: auto;
+  padding: 0 10px;
+  margin-right: 10px;
+  position: absolute;
+  color: rgb(117, 3, 3);
+  right: 80px;
+  cursor: pointer;
+}
+
+.list-container div {
+  align-items: flex-start;
+  border-bottom: 1px dashed rgb(100, 100, 100);
+}
+
+.example {
+  color: rgb(102, 102, 102);
+  margin-left: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dashed rgb(100, 100, 100);
+}
+
+@media screen and (max-width: 480px) {
+}

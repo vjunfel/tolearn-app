@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai&family=Architects+Daughter&family=Righteous&family=Roboto:wght@400;700&family=Special+Elite&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../Sample01/images/Jf-logo-90.png"
+      type="images/png"
+    />
+    <link rel="stylesheet" href="./css/tolearn-v3.css" />
+    <script
+      src="https://kit.fontawesome.com/39c9ed263d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>ToLearn App</title>
+  </head>
+
+  <body>
+    <div class="booklist">
+      <div class="title-head">
+        Things to <span>LEARN</span>with <span>GOAL</span>
+      </div>
+
+      <div class="inputs">
+        <div class="text-area">
+          <input
+            class="inputId"
+            id="input-Id"
+            type=" text"
+            placeholder="Add More"
+            required
+          />
+        </div>
+        <input class="date-picker" id="date-picker" type="date" />
+        <button class="addBtn" onclick="addToLearn()">Add</button>
+      </div>
+
+      <!-- <div class="sub-title">L &nbsp; &nbsp;I &nbsp;&nbsp;S &nbsp;&nbsp;T</div> -->
+      <!-- <div class="example">
+        Ex: Javascript Programming Language -------- June 30, 2025
+      </div> -->
+
+      <div class="list-container" id="toLearn-list">
+        <div class="buttonClick" id="buttonClick"></div>
+      </div>
+
+      <!-- <div class="sub-title" id="completed-title">
+        C&nbsp;O&nbsp;M&nbsp;P&nbsp;L&nbsp;E&nbsp;T&nbsp;E&nbsp;D
+      </div> -->
+      <div class="list-container" id="completed-list">
+        <!-- Sample completed-list -->
+      </div>
+    </div>
+
+    <script src="../Sample01/js/tolearn-v5.js"></script>
+  </body>
+</html>
